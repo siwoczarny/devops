@@ -1,0 +1,9 @@
+@import '../../variables.scss';
+
+.main {
+    background-color: yellow;
+    &_title {
+        text-align: center;
+        width: 100vw;
+    }
+}

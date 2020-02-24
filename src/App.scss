@@ -1,0 +1,23 @@
+@import './variables.scss';
+
+* {
+    margin: 0 0;
+    padding: 0 0;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.app {
+    width: 100vw;
+    font-family: $font-text;
+    .row {
+        margin: 0;
+    }
+    [class*=col] {
+        padding: 0;
+    }
+}

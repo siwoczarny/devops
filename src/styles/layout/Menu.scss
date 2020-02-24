@@ -1,0 +1,20 @@
+@import '../../variables.scss';
+
+.menu {
+    position: absolute;
+    top: 0;
+    text-align: right;
+    // height: 100vh;
+    background-color: grey;
+    &_navbar {
+        position: fixed;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        padding-right: 24px;
+        ul {
+            text-decoration: none;
+            list-style: none;
+        }
+    }
+}

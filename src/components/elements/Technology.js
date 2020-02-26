@@ -4,8 +4,8 @@ import '../../styles/elements/Technology.scss';
 
 const Technology = () => {
     return (
-        <section className="technology">
-            lskdfjsdkfjlds
+        <section className="technology" id="technology">
+            Tech
         </section>
     );
 }

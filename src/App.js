@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="app">
       <Row>
-        <Col md={9}>
+        <Col xs={12} md={9} className="main">
           <Main />
         </Col>
         <Col md={3} className="menu">

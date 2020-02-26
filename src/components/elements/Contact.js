@@ -4,8 +4,8 @@ import '../../styles/elements/Contact.scss';
 
 const Contact = () => {
     return (
-        <section className="contact">
-            lskdfjsdkfjlds
+        <section className="contact" id="contact">
+            Contact
         </section>
     );
 }

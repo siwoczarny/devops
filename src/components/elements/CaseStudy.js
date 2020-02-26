@@ -4,8 +4,8 @@ import '../../styles/elements/CaseStudy.scss';
 
 const CaseStudy = () => {
     return (
-        <section className="casestudy">
-            lskdfjsdkfjlds
+        <section className="case-study" id="caseStudy">
+            Case Study
         </section>
     );
 }

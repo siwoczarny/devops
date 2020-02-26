@@ -4,8 +4,8 @@ import '../../styles/elements/Services.scss';
 
 const Services = () => {
     return (
-        <section className="services">
-            lskdfjsdkfjlds
+        <section className="services" id="services">
+            Services
         </section>
     );
 }

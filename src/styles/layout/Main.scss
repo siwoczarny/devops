@@ -1,8 +1,10 @@
 @import '../variables.scss';
 
 .main {
-    background-color: yellow;
+    
+    background-color: $color-bg;
     &_title {
+        margin: 16px;
         text-align: center;
         width: 100vw;
     }

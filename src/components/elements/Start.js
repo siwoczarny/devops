@@ -3,7 +3,7 @@ import '../../styles/elements/Start.scss';
 
 const Start = () => {
     return (
-        <section className="start">
+        <section className="start" id="start">
             <h1>Cześć, dobrze trafiłeś.</h1>
         </section>
     );

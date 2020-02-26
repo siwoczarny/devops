@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react';
+// import { Route, Switch , withRouter } from 'react-router-dom';
 import '../../styles/layout/Main.scss';
 //elements
 import Start from '../elements/Start';
@@ -8,9 +9,11 @@ import About from '../elements/About';
 import Technology from '../elements/Technology';
 import Contact from '../elements/Contact';
 
-const Main = () => {
-    return (
-        <main className="main">
+class Main extends Component {
+    state = {  }
+    render() { 
+        return (
+        <>
         <div className="main_title">
           <h1>LOGO</h1>
         </div>
@@ -22,8 +25,10 @@ const Main = () => {
             <Technology />
             <Contact />
         </div>
-        </main>
-    );
+        </>
+        );
+    }
 }
  
 export default Main;
+ 

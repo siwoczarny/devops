@@ -4,8 +4,8 @@ import '../../styles/elements/About.scss';
 
 const About = () => {
     return (
-        <section className="about">
-            lskdfjsdkfjlds
+        <section className="about" id="about">
+            About
         </section>
     );
 }

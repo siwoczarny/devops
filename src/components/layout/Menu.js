@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../../styles/layout/Menu.scss';
+import Scrollspy from 'react-scrollspy'
 
 class Menu extends Component {
     state = {
@@ -15,12 +16,14 @@ class Menu extends Component {
     render() { 
         const {menuOpen} = this.state;
         const list = [
-            {name: "usługi", id: "#services"},
-            {name: "case study", id: "#caseStudy"},
-            {name: "o nas", id: "#about"},
-            {name: "technologie", id: "#technology"},
-            {name: "kontakt", id: "#contact"},
+            {name: "usługi", id: "#services", section: 'services'},
+            {name: "case study", id: "#case-study", section: 'case-study'},
+            {name: "o nas", id: "#about", section: 'about'},
+            {name: "technologie", id: "#technology", section: 'technology'},
+            {name: "kontakt", id: "#contact", section: 'contact'},
         ]
+
+        const sections = list.map(item => item.section);
 
         const menu = list.map(item => (
             <li key={item.name}>
@@ -44,9 +47,9 @@ class Menu extends Component {
                         className={`hamburger_line hamburger_bottom${menuOpen ? "--open" : ""}`}
                     ></div>
                 </div>
-                <ul className={`menu_list${menuOpen ? " menu_list--open" : ""}`}>
+                <Scrollspy items={sections} currentClassName="is-current" offset={-50} className={`menu_list${menuOpen ? " menu_list--open" : ""}`}>
                     {menu}
-                </ul>
+                </Scrollspy>
             </nav>
         );
     }

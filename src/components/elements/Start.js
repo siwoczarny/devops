@@ -4,7 +4,7 @@ import '../../styles/elements/Start.scss';
 const Start = () => {
     return (
         <section className="start" id="start">
-            <h1>Cześć, dobrze trafiłeś.</h1>
+            <h1 className="start_title">Cześć,<br />dobrze trafiłeś.</h1>
         </section>
     );
 }

@@ -3,4 +3,13 @@
 
 .start {
     @include section;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    &_title {
+        font-size: $base-size * 5;
+        font-weight: 700;
+        margin-left: 32px;
+        transform: translateY(-50%);
+    }
 }

@@ -63,6 +63,7 @@
         background-color: $color-bg;
         transform: translateY(-50%);
         border-left: 1px solid $color-main;
+        transition: $transition;
         @include tablet-small {
             right: 0;
             border: none;
@@ -98,9 +99,7 @@
             }
         }
     }
-    
     &_nav--open {
         right: 0;
     }
-    
 }

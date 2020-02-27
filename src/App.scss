@@ -13,12 +13,17 @@
 
 .app {
     width: 100vw;
+    margin: 0;
+    padding: 0;
     font-family: $font-text;
     font-size: $base-size;
+    overflow: hidden;
     .row {
         margin: 0;
+        padding: 0;
     }
     [class*=col] {
+        margin: 0;
         padding: 0;
     }
 }

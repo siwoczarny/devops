@@ -35,7 +35,7 @@ class Menu extends Component {
             </li>
         ))
         return (
-            <nav className="menu_nav">
+        <>
             <div className="menu_hamburger" onClick={this.handleClickMenu}>
                     <div
                         className={`hamburger_line hamburger_top${menuOpen ? "--open" : ""}`}
@@ -46,11 +46,15 @@ class Menu extends Component {
                     <div
                         className={`hamburger_line hamburger_bottom${menuOpen ? "--open" : ""}`}
                     ></div>
-                </div>
-                <Scrollspy items={sections} currentClassName="is-current" offset={-50} className={`menu_list${menuOpen ? " menu_list--open" : ""}`}>
+            </div>
+            <nav className={`menu_nav${menuOpen ? " menu_nav--open" : ""}`}>
+                <div className="menu_vertical-line"></div>
+                <Scrollspy items={sections} currentClassName="is-current" offset={-50} className="menu_list">   
                     {menu}
                 </Scrollspy>
+                <div className="menu_vertical-line"></div>
             </nav>
+            </>
         );
     }
 }

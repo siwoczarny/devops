@@ -2,15 +2,12 @@
 @import '../mixins.scss';
 
 .menu {
-    position: fixed;
     text-align: right;
     @include tablet-small {
-        top: 0;
-        min-height: 100vh;
-        background-color: dimgrey;
+        background-color: $color-bg;
     }
     &_hamburger {
-        position: absolute;
+        position: fixed;
         top: 16px;
         right: 16px;
         width: 45px;
@@ -60,38 +57,50 @@
     }
     &_nav {
         position: fixed;
-        right: 0;
-        top: 0;
-        height: 100vh;
-        padding-right: 24px;
+        right: -100%;
+        top: 50%;
+        z-index: 98;
+        background-color: $color-bg;
+        transform: translateY(-50%);
+        border-left: 1px solid $color-main;
+        @include tablet-small {
+            right: 0;
+            border: none;
+        }
+    }
+    &_vertical-line {
+        position: relative;
+        height: 50vh;
+        opacity: 0.2;
+        margin-right: 56px;
+        border-right: 2px solid $color-main;
     }
     &_list {
         position: relative;
-        width: 100%;
-        height: 100vh;
-        top: 62px;
-        right: -110px;
+        right: 0;
+        padding: 16px 32px;
+        font-size: $base-size * 2;
+        font-weight: 900;
         list-style: none;
-        z-index: 98;
-        background-color: $color-bg;
-        transition: $transition;
-        @include tablet-small {
-            right: 0;
-
+        li {
+            opacity: 0.5;
+            transition: $transition;
         }
         li.is-current {
-            letter-spacing: 2px;
-            transition: $transition;
+            opacity: 0.9;
         }
         a {
             text-decoration: none;
-            color: grey;
+            color: $color-main;
+            opacity: 0.8;
             &:hover {
-                color: black;
+                opacity: 1;
             }
         }
     }
-    &_list--open {
+    
+    &_nav--open {
         right: 0;
     }
+    
 }

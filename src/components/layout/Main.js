@@ -24,6 +24,9 @@ class Main extends Component {
             <Technology />
             <Contact />
         </div>
+        <div className="main_footer">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus maxime dignissimos assumenda fugiat beatae inventore neque dolorem porro. Perferendis voluptates deleniti ullam adipisci, nulla error nihil? Quaerat facilis culpa corporis?</p>
+        </div>
         </>
         );
     }

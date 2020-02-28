@@ -3,4 +3,5 @@
 
 .about {
     @include section;
+    background-color: $color-bg;
 }

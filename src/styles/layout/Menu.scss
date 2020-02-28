@@ -4,7 +4,7 @@
 .menu {
     text-align: right;
     @include tablet-small {
-        background-color: $color-bg;
+        // background-color: $color-bg;
     }
     &_hamburger {
         position: fixed;
@@ -67,13 +67,16 @@
         @include tablet-small {
             right: 0;
             border: none;
+            background-color: transparent;
         }
     }
     &_vertical-line {
         position: relative;
+        width: 2px;
         height: 50vh;
         opacity: 0.2;
-        margin-right: 56px;
+        margin-left: 176px;
+        border-left: 2px solid $color-main-neg;
         border-right: 2px solid $color-main;
     }
     &_list {
@@ -86,6 +89,11 @@
         li {
             opacity: 0.5;
             transition: $transition;
+            &:hover {
+                opacity: 1;
+                color: $color-main;
+                text-decoration: none;
+            }
         }
         li.is-current {
             opacity: 0.9;
@@ -93,9 +101,11 @@
         a {
             text-decoration: none;
             color: $color-main;
+            text-shadow: -1px 0 $color-main-neg, 0 1px $color-main-neg, 1px 0 $color-main-neg, 0 -1px $color-main-neg;
             opacity: 0.8;
             &:hover {
-                opacity: 1;
+                color: $color-main;
+                text-decoration: none;
             }
         }
     }

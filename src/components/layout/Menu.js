@@ -13,6 +13,10 @@ class Menu extends Component {
         })
     }
 
+    handleClickLink = () => {
+       alert('jeach')
+    }
+
     render() { 
         const {menuOpen} = this.state;
         const list = [
@@ -29,7 +33,7 @@ class Menu extends Component {
             <li key={item.name}>
                 <a 
                   href={item.id}
-                  onClick={this.handleClick}>
+                  onClick={this.handleClickLink}>
                     {item.name}
                 </a>
             </li>

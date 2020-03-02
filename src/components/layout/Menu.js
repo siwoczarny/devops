@@ -14,7 +14,7 @@ class Menu extends Component {
     }
 
     handleClickLink = () => {
-       alert('jeach')
+        console.log("working")
     }
 
     render() { 

@@ -4,4 +4,27 @@
 .services {
     @include section;
     background-color: $color-bg;
+    &_title {
+        margin-left: 32px;
+        margin-bottom: 24px;
+        font-size: $base-size * 3;
+        font-weight: 900;
+    }
+    &_links {
+        width: 60%;
+        margin-left: 32px;
+        text-align: center;
+        border: 1px solid $color-main;
+        }
+    &_box {
+        height: 150px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: 1px solid $color-main;
+        @include tablet-small {
+            width: 100%;
+            max-width: 256px;
+        }
+    }
 }

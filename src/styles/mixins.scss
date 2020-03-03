@@ -28,6 +28,12 @@
   //elements
 
   @mixin section {
-      position: relative;
-      min-height: 100vh;
+    position: relative;
+    min-height: 100vh;
+  }
+
+  @mixin title {
+    margin: 0 0 24px 32px;
+    font-size: $base-size * 3;
+    font-weight: 700;
   }

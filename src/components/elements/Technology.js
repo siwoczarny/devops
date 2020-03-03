@@ -5,7 +5,7 @@ import '../../styles/elements/Technology.scss';
 const Technology = () => {
     return (
         <section className="technology" id="technology">
-            Tech
+            <h3 className="technology_title">technologie</h3>
         </section>
     );
 }

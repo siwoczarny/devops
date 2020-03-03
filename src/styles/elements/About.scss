@@ -4,4 +4,18 @@
 .about {
     @include section;
     background-color: $color-bg;
+    &_block {
+        padding: 128px 0;
+    }
+    &_question {
+        font-size: $base-size * 4;
+        font-weight: 700;
+        margin-left: 32px;
+    }
+    &_answer {
+        margin-left: 32px;
+    }
+    &_title {
+        @include title;
+    }
 }

@@ -4,4 +4,7 @@
 .technology {
     @include section;
     background-color: $color-bg;
+    &_title {
+        @include title;
+    }
 }

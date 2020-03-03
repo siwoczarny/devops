@@ -5,10 +5,7 @@
     @include section;
     background-color: $color-bg;
     &_title {
-        margin-left: 32px;
-        margin-bottom: 24px;
-        font-size: $base-size * 3;
-        font-weight: 900;
+        @include title;
     }
     &_links {
         width: min-content;

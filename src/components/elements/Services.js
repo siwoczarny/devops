@@ -6,7 +6,7 @@ import { Row, Col } from 'react-bootstrap';
 const Services = () => {
     return (
         <section className="services" id="services">
-            <h2 className="services_title">usługi</h2>
+            <h3 className="services_title">usługi</h3>
             <div className="services_links">
             <Row>
                 <Col md={4}>

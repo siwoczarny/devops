@@ -16,7 +16,7 @@ const Services = () => {
                 </Col>
                 <Col md={4}>
                     <div className="services_box">
-                        <a href="...">Ochronaprzed atakamiDDoS i WAF</a>
+                        <a href="...">Ochrona przed atakami DDoS i WAF</a>
                     </div>
                 </Col>
                 <Col md={4}>
@@ -33,19 +33,19 @@ const Services = () => {
                 </Col>
                 <Col md={4}>
                     <div className="services_box">
-                        <a href="...">Zarządzaniesieciami</a>
+                        <a href="...">Zarządzanie sieciami</a>
                     </div>
                 </Col>
                 <Col md={4}>
                     <div className="services_box">
-                        <a href="...">BodyLeasing</a>
+                        <a href="...">Body Leasing</a>
                     </div>
                 </Col>
             </Row>
             <Row>
                 <Col md={4}>
                     <div className="services_box">
-                        <a href="...">HighAvailability</a>
+                        <a href="...">High Availability</a>
                     </div>
                 </Col>
                 <Col md={4}>
@@ -55,10 +55,13 @@ const Services = () => {
                 </Col>
                 <Col md={4}>
                     <div className="services_box">
-                        <a href="...">PrivateCloud</a> 
+                        <a href="...">Private Cloud</a> 
                     </div>
                 </Col>
             </Row>
+            </div>
+            <div className="services_footnote">
+                <p>Jeżeli jest coś, czego potrzebujesz, a nie widzisz tego w usługach wymienionych wyżej <a href="#contact">napisz</a>.</p>
             </div>
         </section>
     );

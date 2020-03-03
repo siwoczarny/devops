@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../../styles/layout/Main.scss';
+//logo
+import logo from '../../images/logo.png';
 //elements
 import Start from '../elements/Start';
 import Services from '../elements/Services';
@@ -14,7 +16,7 @@ class Main extends Component {
         return (
         <>
         <div className="main_title">
-          <h1>LOGO</h1>
+            <img src={logo} alt=""/>
         </div>
         <div className="main_content">
             <Start />

@@ -8,9 +8,9 @@ const About = () => {
             <div className="about_block">
                 <h2 className="about_question">Masz<br/>jakieś pytania?</h2>
                 <div className="about_answer">
-                    <button></button>
-                    <button></button>
-                    <button></button>
+                    <button>Tak, mam</button>
+                    <button>Owszem</button>
+                    <button>Tak</button>
                 </div>
             </div>
             <h3 className="about_title">o nas</h3>

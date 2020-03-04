@@ -14,6 +14,27 @@
     }
     &_answer {
         margin-left: 32px;
+        button {
+            font-size: $base-size * 0.9;
+            font-weight: 600;
+            margin: 4px;
+            border: 2px solid $color-main;
+            background-color: transparent;
+            transition: $transition;
+            &:nth-child(1) {
+            padding: 16px 56px;
+            }
+            &:nth-child(2) {
+                padding: 16px 32px;
+            }
+            &:nth-child(3) {
+                padding: 16px 24px;
+            }
+            &:hover {
+                color: $color-main-neg;
+                background-color: $color-bg-neg;
+            }
+        }
     }
     &_title {
         @include title;

@@ -37,7 +37,8 @@
         }
     }
     &_footnote {
-        margin: 64px 0 0 32px ;
+        margin: 64px 256px 0 32px ;
+        padding-bottom: 32px;
         a {
             color: red;
             &:hover {

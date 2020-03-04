@@ -8,9 +8,12 @@
     align-items: center;
     background-color: $color-bg;
     &_title {
-        font-size: $base-size * 5;
+        font-size: $base-size * 4;
         font-weight: 700;
         margin-left: 32px;
         transform: translateY(-50%);
+        @include mobile-large {
+            font-size: $base-size * 5;
+        }
     }
 }

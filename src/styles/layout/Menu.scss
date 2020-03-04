@@ -3,12 +3,9 @@
 
 .menu {
     text-align: right;
-    @include tablet-small {
-        // background-color: $color-bg;
-    }
     &_hamburger {
         position: fixed;
-        top: 16px;
+        top: 14px;
         right: 16px;
         width: 45px;
         height: 45px;
@@ -32,6 +29,7 @@
             transform-origin: left top;
             transition: $transition;
             margin-bottom: 5px;
+            outline: 1px groove $color-bg;
             &--open {
                 transform: translateY(3px) rotate(-45deg);
             }
@@ -40,6 +38,7 @@
             opacity: 1;
             transform: none;
             transition: $transition;
+            outline: 1px groove $color-bg;
             &--open {
                 opacity: 0;
                 transform: translateX(10px);
@@ -50,6 +49,8 @@
             transform: none;
             transition: $transition;
             margin-top: 5px;
+            outline: 1px groove $color-bg;
+
             &--open {
                 transform: translateY(-3px) rotate(45deg);
             }

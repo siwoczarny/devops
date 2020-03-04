@@ -37,8 +37,10 @@
         }
     }
     &_footnote {
-        margin: 64px 256px 0 32px ;
-        padding-bottom: 32px;
+        padding: 64px 32px 32px 32px ;
+        @include tablet-small {
+            padding-right: 256px;
+        }
         a {
             color: red;
             &:hover {

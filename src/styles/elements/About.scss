@@ -39,4 +39,14 @@
     &_title {
         @include title;
     }
+    &_text {
+        padding: 16px 32px 256px;
+        @include tablet-small {
+            padding-right: 256px;
+        }
+        p {
+            color: $color-main;
+            font-size: $base-size * 0.8;
+        }
+    }
 }

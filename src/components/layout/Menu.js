@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../../styles/layout/Menu.scss';
-import Scrollspy from 'react-scrollspy'
+import Scrollspy from 'react-scrollspy';
 
 class Menu extends Component {
     state = {

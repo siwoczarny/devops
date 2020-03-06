@@ -9,4 +9,42 @@
         color: $color-main-neg;
         padding-top: 64px;
     }
+    &_stack {
+        padding-left: 32px;
+    }
+    &_project {
+        padding: 24px 0;
+        opacity: 0.2;
+    }
+    img {
+        max-width: 250px;
+        border: 2px solid $color-main-neg; 
+    }
+    .active {
+        opacity: 1;
+    }
+    &_description {
+        @include tablet-small {
+            width: 70vw;
+        }
+        h5 {
+            color: $color-main-neg;
+            font-size: $base-size *1.2;
+            font-weight: 700;
+        }
+        p {
+            color: $color-light;
+            font-size: $base-size * 0.8;
+        }
+        a {
+            color: $color-main-neg;
+            font-size: $base-size * 0.9;
+            text-decoration: none;
+            transition: $transition;
+            &:hover {
+                color: $color-main-neg;
+                text-decoration: underline;
+            }
+        }
+    }
 }

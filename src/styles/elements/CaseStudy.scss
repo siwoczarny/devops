@@ -3,27 +3,29 @@
 
 .case-study {
     @include section;
-    background-color: $color-bg-neg;
+    background-color: $color-bg-dark;
     &_title {
         @include title;
         color: $color-main-neg;
-        padding-top: 64px;
+        padding-top: 128px;
     }
     &_stack {
         padding-left: 32px;
     }
     &_project {
-        padding: 24px 0;
+        padding: 24px 16px;
         opacity: 0.2;
+        transform: skewX(-20deg);
     }
     img {
         max-width: 250px;
-        border: 2px solid $color-main-neg; 
+        border: 3px solid $color-main-neg; 
     }
     .active {
         opacity: 1;
     }
     &_description {
+        padding-bottom: 128px;
         @include tablet-small {
             width: 70vw;
         }
@@ -33,7 +35,7 @@
             font-weight: 700;
         }
         p {
-            color: $color-light;
+            color: $color-med;
             font-size: $base-size * 0.8;
         }
         a {

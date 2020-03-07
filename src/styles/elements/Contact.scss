@@ -3,7 +3,7 @@
 
 .contact {
     @include section;
-    background-color: $color-bg-neg;
+    background-color: $color-bg-dark;
     &_title {
         @include title;
         color: $color-main-neg;

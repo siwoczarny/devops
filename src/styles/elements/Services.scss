@@ -29,7 +29,7 @@
             transition: $transition;
         }
         &:hover {
-            background-color: $color-bg-neg;
+            background-color: $color-main;
             a {
             color: $color-main-neg;
             text-decoration: none;
@@ -37,7 +37,7 @@
         }
     }
     &_footnote {
-        padding: 64px 32px 32px 32px ;
+        padding: 128px 32px 128px 32px ;
         @include tablet-small {
             padding-right: 256px;
         }

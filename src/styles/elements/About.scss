@@ -13,8 +13,10 @@
         margin-left: 32px;
     }
     &_answer {
+        margin-top: 32px;
         margin-left: 32px;
-        button {
+        a {
+            color: $color-main;
             font-size: $base-size * 0.9;
             font-weight: 600;
             margin: 4px;

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/elements/About.scss';
-
+import { Link } from 'react-scroll';
 
 const About = () => {
     return (
@@ -8,9 +8,9 @@ const About = () => {
             <div className="about_block">
                 <h2 className="about_question">Masz<br/>jakieś pytania?</h2>
                 <div className="about_answer">
-                    <a href="#contact">Tak, mam</a>
-                    <a href="#contact">Owszem</a>
-                    <a href="#contact">Tak</a>
+                    <Link to="contact" spy={true} smooth={true} duration={500} >Tak, mam</Link>
+                    <Link to="contact" spy={true} smooth={true} duration={500} >Owszem</Link>
+                    <Link to="contact" spy={true} smooth={true} duration={500} >Tak</Link>
                 </div>
             </div>
             <h3 className="about_title">o nas</h3>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../../styles/layout/Menu.scss';
 import Scrollspy from 'react-scrollspy';
+import { Link } from 'react-scroll';
 
 class Menu extends Component {
     state = {
@@ -11,10 +12,6 @@ class Menu extends Component {
         this.setState({
             menuOpen: !this.state.menuOpen
         })
-    }
-
-    handleClickLink = () => {
-        console.log("working")
     }
 
     render() { 
@@ -31,11 +28,7 @@ class Menu extends Component {
 
         const menu = list.map(item => (
             <li key={item.name}>
-                <a 
-                  href={item.id}
-                  onClick={this.handleClickLink}>
-                    {item.name}
-                </a>
+                <Link to={item.section} spy={true} smooth={true} duration={500} >{item.name}</Link>
             </li>
         ))
         return (
@@ -53,7 +46,7 @@ class Menu extends Component {
             </div>
             <nav className={`menu_nav${menuOpen ? " menu_nav--open" : ""}`}>
                 <div className="menu_vertical-line"></div>
-                <Scrollspy items={sections} currentClassName="is-current" offset={-50} className="menu_list">   
+                <Scrollspy items={sections} offset={-50} currentClassName="is-current" className="menu_list">   
                     {menu}
                 </Scrollspy>
                 <div className="menu_vertical-line"></div>

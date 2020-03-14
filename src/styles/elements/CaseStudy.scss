@@ -9,23 +9,32 @@
         color: $color-main-neg;
         padding-top: 128px;
     }
-    &_stack {
-        padding-left: 32px;
-    }
-    &_project {
-        padding: 24px 16px;
-        opacity: 0.2;
-        transform: skewX(-20deg);
-    }
+    .nav-tabs {
+        padding: 0 32px;
+        border: none;
+        .nav-link{
+            opacity: 0.4;
+           &.active {
+            background-color: transparent;
+            border: none;
+            opacity: 1;
+            }
+            &:hover {
+                border: none;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    } 
     img {
         max-width: 250px;
         border: 3px solid $color-main-neg; 
+        transform: skewX(-20deg);
     }
-    .active {
-        opacity: 1;
-    }
+    
     &_description {
-        padding-bottom: 128px;
+        padding: 32px 0 128px 32px;
         @include tablet-small {
             width: 70vw;
         }

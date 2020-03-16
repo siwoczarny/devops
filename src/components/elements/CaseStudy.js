@@ -43,7 +43,7 @@ const CaseStudy = () => {
                             <a href="/" onClick={handleClick}>więcej</a>
                         </div>  
                     </Tab>
-                    </Tabs>
+                </Tabs>
             </div>
         </section>
     );

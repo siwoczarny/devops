@@ -7,7 +7,7 @@
     &_title {
         @include title;
         color: $color-main-neg;
-        padding-top: 64px;
+        padding-top: 128px;
     }
     &_form {
         padding: 0 32px 128px 32px;
@@ -56,7 +56,7 @@
     }
     & .btn-group {
         .btn-primary {
-            margin: 16px 56px;
+            margin: 16px 0;
             color: $color-med;
             font-weight: 600;
             background-color: $color-button;
@@ -64,6 +64,9 @@
             border: none;
             transform: skewX(-20deg);
             transition: $transition;
+            @include tablet-small {
+                margin: 16px 56px;
+            }
             &:hover {
                 color: $color-main-neg;
             }
@@ -81,5 +84,9 @@
         border-radius: 0;
         border: none;
         padding: 16px 48px;
+        &:hover {
+            color: $color-main-neg;
+            background-color: $color-button;
+        }
     }
 }

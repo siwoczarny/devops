@@ -10,7 +10,10 @@
         padding-top: 128px;
     }
     .nav-tabs {
-        padding: 0 32px;
+        @include tablet-small {
+            padding: 0 32px;
+        }
+        padding: 0 16px;
         border: none;
         .nav-link{
             opacity: 0.4;

@@ -9,6 +9,10 @@ import Button from 'react-bootstrap/Button';
 import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
 import ToggleButton from 'react-bootstrap/ToggleButton'
 
+function handleClickSubmit() {
+    alert('Wysłano formularz!')
+}
+
 const Contact = () => {
     return (
         <section className="contact" id="contact">
@@ -42,9 +46,7 @@ const Contact = () => {
                             <Form.Check id="checbox-accept" label="Akceptuję... *" aria-label="accept"/>
                         </Form.Group>
                     </Form.Row>
-                    <Button type="submit" className="btn-send" >Wysyłam</Button>
-                    
-                    
+                    <Button type="submit" className="btn-send" onClick={handleClickSubmit}>Wysyłam</Button>
                 </Form>
             </div>
         </section>

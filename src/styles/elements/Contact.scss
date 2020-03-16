@@ -3,23 +3,64 @@
 
 .contact {
     @include section;
-    // background-color: $color-bg-dark;
+    background-color: $color-bg-dark;
     &_title {
         @include title;
         color: $color-main-neg;
         padding-top: 64px;
     }
     &_form {
+        padding: 0 32px 128px 32px;
         @include tablet-small {
             width: 70vw;
         }
     }
+
+    & .form {
+        &-label {
+            padding-top: 48px;
+            color: $color-main-neg;
+            font-weight: 700;
+            font-size: $base-size * 1.1;
+        }
+        &-control {
+            border: 1px solid $color-med;
+            border-radius: 0;
+            background-color: transparent;
+            outline: none;
+            &:focus {
+                color: $color-main;
+                border-color: initial;
+                box-shadow: none;
+            }
+        }
+        &-check {
+            padding-top: 8px;
+            padding-bottom: 24px;
+        }
+        &-check-input {
+            appearance: none;
+            cursor: pointer;
+            border-radius: 0;
+            padding: 8px;
+            border: 1px solid $color-bg;
+            background-color: transparent;
+            &:checked {
+                background-color: $color-bg;
+            }
+        }
+        &-check-label {
+            color: $color-med;
+            padding-left: 8px;
+        }
+    }
     & .btn-group {
         .btn-primary {
-            margin: 0 16px;
-            color: $color-main;
-            background-color: $color-med;
-            border-radius: none;
+            margin: 16px 56px;
+            color: $color-med;
+            font-weight: 600;
+            background-color: $color-button;
+            border-radius: 0;
             border: none;
             transform: skewX(-20deg);
             transition: $transition;
@@ -30,7 +71,15 @@
         .btn-primary:not(:disabled):not(.disabled).active {
                 background-color: $color-bg;
                 color: $color-main;
-            }
-        
+        }
+    }
+    & .btn-send {
+        color: $color-main;
+        text-align: right;
+        font-weight: 600;
+        background-color: $color-bg;
+        border-radius: 0;
+        border: none;
+        padding: 16px 48px;
     }
 }

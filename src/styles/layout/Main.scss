@@ -9,16 +9,9 @@
         background-color: $color-bg;
     }
     &_content {
-        @include tablet-small {
         width: 100vw;
-        }
     }
     &_footer {
-        background-color: $color-bg;
         width: 100vw;
-        padding: 16px;
-        @include tablet-small {
-            padding-right: 256px;
-        }
     }
 }

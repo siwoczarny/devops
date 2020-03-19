@@ -1,0 +1,28 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.footer {
+    padding: 64px 32px 128px 32px;
+    background-color: $color-bg;
+    @include tablet-small {
+        padding-right: 256px;
+    }
+    &_links {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        a {
+            padding: 8px 0;
+            color: $color-main;
+            font-size: $base-size * 0.8;
+            transition: $transition;
+            &:hover {
+                color: inherit;
+            }
+        }
+    }
+    &_caption {
+        padding-top: 128px;
+        font-size: $base-size * 0.9;
+    }
+}

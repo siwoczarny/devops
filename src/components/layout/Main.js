@@ -9,6 +9,7 @@ import CaseStudy from '../elements/CaseStudy';
 import About from '../elements/About';
 import Technology from '../elements/Technology';
 import Contact from '../elements/Contact';
+import Footer from '../elements/Footer';
 
 class Main extends Component {
     state = {  }
@@ -27,7 +28,7 @@ class Main extends Component {
             <Contact />
         </div>
         <div className="main_footer">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus maxime dignissimos assumenda fugiat beatae inventore neque dolorem porro. Perferendis voluptates deleniti ullam adipisci, nulla error nihil? Quaerat facilis culpa corporis?</p>
+            <Footer />
         </div>
         </>
         );

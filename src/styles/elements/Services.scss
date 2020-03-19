@@ -9,11 +9,12 @@
     }
     &_links {
         width: min-content;
-        margin-left: 32px;
+        margin: 0 auto;
         text-align: center;
         border: 1px solid $color-main;
         @include tablet-small {
             width: max-content;
+            margin-left: 32px;
         }
         }
     &_box {

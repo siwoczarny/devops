@@ -10,11 +10,12 @@
         padding-top: 128px;
     }
     .nav-tabs {
-        @include tablet-small {
-            padding: 0 32px;
-        }
-        padding: 0 16px;
         border: none;
+        justify-content: center;
+        @include tablet-small {
+            margin: 0 32px;
+            justify-content: left;
+        }
         .nav-link{
             opacity: 0.4;
            &.active {
@@ -37,7 +38,7 @@
     }
     
     &_description {
-        padding: 32px 0 128px 32px;
+        padding: 32px 32px 128px 32px;
         @include tablet-small {
             width: 70vw;
         }
